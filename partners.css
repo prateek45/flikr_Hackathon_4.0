@@ -1,0 +1,245 @@
+/*Nav Bar*/
+a:hover:link{
+    text-decoration: none;
+    color: white;
+}
+.nbar{
+    position: absolute;
+    margin: 0 auto;
+    padding: 10px 3px;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    
+    cursor: pointer;
+    z-index: 10;
+
+}
+.about ,
+.portfolio ,
+.team ,
+.news ,
+.reach{
+
+    color: #FFF;
+    position: relative;
+    margin: 8px 10px;
+    padding: 0 10px;
+    
+}
+.section{
+  
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.image_1{
+    border-radius: 28%;
+    height: 55px;
+    width: 125px;
+}
+
+.home{
+    float: left;
+    height: auto;
+    width: 125px;
+}
+/*Annimation to navbar*/
+.about ,
+.portfolio ,
+.team ,
+.news ,
+.reach{
+    display: block;
+    float: right;
+    text-align: center;
+    color: black;
+    padding-right: 10px;
+}
+.about:before ,
+.portfolio:before ,
+.team:before ,
+.news:before ,
+.reach:before
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    background: rgb(25, 25, 25);
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+a:hover:before
+{
+    height: 100%;
+    text-decoration: none;
+}
+/*Dropdown Menu Annimation*/
+.dropdown {
+    float: left;
+    
+}
+  
+.dropdown .dropbtn {
+   
+    font-size: 14px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 1px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+.dropdown-content a:hover {
+    border-radius: 10%;
+    background-color: #ddd;
+    text-decoration: none;
+  }
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 20%;
+    z-index: 20;
+}
+.img1{
+    width: 100%;
+    height: 47.5pc;
+   opacity: 0.5;
+  
+}
+.heading{
+ 
+    position: absolute;
+    margin: 0 auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 100px;
+    font-weight: bold;
+    color: black;
+    z-index: 10;
+   
+}
+.down{
+    bottom: 100px;
+    border-radius: 50%;
+    position: absolute;
+    border: none;
+    transform: rotate(90deg);
+    box-shadow: 0px 8px 16px 0px rgb(0,0,0,0.2);
+    font-size: 25px;
+    background-color: transparent;
+    
+}
+.down:hover{
+    text-decoration: none;
+    border: none;
+    color: black;
+    box-shadow: 0px 16px 32px 0px rgba(0,0,0,0.2);
+    font-size: 29px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+.down button:active{
+    outline: none !important;
+}
+.down button{
+    outline: none !important;
+    text-decoration: none;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    color: white;
+    transition: 0.6s;
+    background-color: rgb(126, 123, 123);
+}
+/*button*/
+.container button{
+    font-size: 15px;  
+    border: none;
+    outline: none !important;
+    color: black;
+    padding: 1px auto;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0 auto;
+    transition: 0.7s;
+}
+.container button:hover{
+    
+    font-size: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+#types{
+    margin: auto;
+}
+.link{
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    margin-right: 300px;
+    transition: 0.5s;
+}
+.link:hover {
+    filter: grayscale(100%);
+}
+.tag{
+   display: inline-block;
+    position: absolute;
+    transition: 0.3s;
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 170px;
+    height: 150px;
+}
+
+.row td{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(230, 222, 222);
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top:40px;
+    border-radius: 10%;
+ }
+ /*end*/
+li a{
+    text-decoration: none;
+    outline: none;
+    color: whitesmoke;
+}
+ul{
+    list-style-type: none;
+}
+#col p{
+    color: whitesmoke;
+    font-size: 10px;
+}

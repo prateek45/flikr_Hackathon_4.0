@@ -1,0 +1,264 @@
+/*Nav Bar*/
+a:hover:link{
+    text-decoration: none;
+    color: white;
+}
+.nbar{
+    position: absolute;
+    margin: 0 auto;
+    padding: 10px 3px;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    
+    cursor: pointer;
+    z-index: 10;
+
+}
+.about ,
+.portfolio ,
+.team ,
+.news ,
+.reach{
+
+    color: #FFF;
+    position: relative;
+    margin: 8px 10px;
+    padding: 0 10px;
+    
+}
+.section{
+  
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.image_1{
+    border-radius: 28%;
+    height: 55px;
+    width: 125px;
+}
+
+.home{
+    float: left;
+    height: auto;
+    width: 125px;
+}
+/*Annimation to navbar*/
+.about ,
+.portfolio ,
+.team ,
+.news ,
+.reach{
+    display: block;
+    float: right;
+    text-align: center;
+    color: black;
+    padding-right: 10px;
+}
+.about:before ,
+.portfolio:before ,
+.team:before ,
+.news:before ,
+.reach:before
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    background: rgb(25, 25, 25);
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+a:hover:before
+{
+    height: 100%;
+    text-decoration: none;
+}
+/*Dropdown Menu Annimation*/
+.dropdown {
+    float: left;
+    
+}
+  
+.dropdown .dropbtn {
+   
+    font-size: 14px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 1px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+.dropdown-content a:hover {
+    border-radius: 10%;
+    background-color: #ddd;
+    text-decoration: none;
+  }
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 20%;
+    z-index: 20;
+}
+/*Background image*/
+.img1{
+    width: 100%;
+    height: 400px;
+    opacity: 0.5;
+}
+/*Tittle and subtitles*/
+.heading{
+    bottom: -50px;
+    position: absolute;
+    margin: 0 auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 100px;
+    font-weight: bold;
+    color: black;
+    z-index: 10;
+   
+}
+#about{
+    right: 50px;
+    position: absolute;
+    color: black;
+    z-index: 10;
+    left: auto;
+}
+.animate-top{
+    position:relative;
+    animation:animateleft 0.8s
+}
+@keyframes animateleft
+{from {
+    top:-300px;
+    opacity:0;
+    } 
+to{
+    top: 39%;
+    opacity:1;
+    }
+}
+#invest{
+    border-radius: 20px;
+    outline: none;
+    transition: 0.6s;
+    background-color: inherit;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+}
+#invest:hover{
+    
+    font-size: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    background-color: rgb(21, 114, 126);
+    color: white;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  /* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  /* Fading animation */
+.fade1 {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+/*end*/
+li a{
+    text-decoration: none;
+    outline: none;
+    color: whitesmoke;
+}
+ul{
+    list-style-type: none;
+}
+#connect p{
+    color: whitesmoke;
+    font-size: 10px;
+}
+p{
+    font-size: 10px;
+}
+#news_l button{
+    font-size: 15px;  
+    border: none;
+    outline: none !important;
+    color: black;
+    padding: 1px auto;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0 auto;
+    transition: 0.7s;
+}
+#news_l button:hover{
+    
+    font-size: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}

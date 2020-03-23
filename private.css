@@ -1,0 +1,275 @@
+/*Nav Bar*/
+a:hover:link{
+    text-decoration: none;
+    color: white;
+}
+.nbar{
+    position: absolute;
+    margin: 0 auto;
+    padding: 10px 3px;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    
+    cursor: pointer;
+    z-index: 10;
+
+}
+.about ,
+.portfolio ,
+.team ,
+.news ,
+.reach{
+
+    color: #FFF;
+    position: relative;
+    margin: 8px 10px;
+    padding: 0 10px;
+    
+}
+.section{
+  
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+.image_1{
+    border-radius: 28%;
+    height: 55px;
+    width: 125px;
+}
+
+.home{
+    float: left;
+    height: auto;
+    width: 125px;
+}
+/*Annimation to navbar*/
+.about ,
+.portfolio ,
+.team ,
+.news ,
+.reach{
+    display: block;
+    float: right;
+    text-align: center;
+    color: black;
+    padding-right: 10px;
+}
+.about:before ,
+.portfolio:before ,
+.team:before ,
+.news:before ,
+.reach:before
+{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    content: '';
+    background: rgb(25, 25, 25);
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+a:hover:before
+{
+    height: 100%;
+    text-decoration: none;
+}
+/*Dropdown Menu Annimation*/
+.dropdown {
+    float: left;
+    
+}
+  
+.dropdown .dropbtn {
+   
+    font-size: 14px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 1px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+.dropdown-content a:hover {
+    border-radius: 10%;
+    background-color: #ddd;
+    text-decoration: none;
+  }
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 20%;
+    z-index: 20;
+}
+/*Background image*/
+.img1{
+    width: 100%;
+    height: 400px;
+   opacity: 0.5;
+  
+}
+/*Tittle and subtitles*/
+.heading{
+    bottom: -50px;
+    position: absolute;
+    margin: 0 auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 100px;
+    font-weight: bold;
+    color: black;
+    z-index: 10;
+   
+}
+.subtitle1{
+    margin-top: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 20px;
+    font-weight: bold;
+}
+.subtitle2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*Buttons*/
+.container hr{
+   border: 1.2px solid black;
+   width: 85%;
+}
+.container{
+    display: block;
+    overflow: hidden;
+}
+.container button{
+    font-size: 15px;  
+    border: none;
+    outline: none !important;
+    color: black;
+    padding: 1px auto;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0 auto;
+    transition: 0.7s;
+}
+.container button:hover{
+    
+    font-size: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+.container table{
+    margin: auto;
+}
+/*list of companies content*/
+
+.companies table{
+    margin-left: 8%;
+}
+.tag,
+.tag_color{
+   display: inline-block;
+    position: absolute;
+    transition: 0.3s;
+    margin-top: 30px;
+    margin-left: 15px;
+    width: 170px;
+    height: 150px;
+}
+
+.tag_color{
+    position: center;
+    opacity: 0;
+}
+.tag:hover{
+    opacity: 0;
+    
+}
+.tag_color:hover{
+    opacity:1;
+    margin-top: 30px;
+    margin-left: 15px;
+    width: 170px;
+    height: 150px;
+}
+.row td{
+   width: 200px;
+   height: 200px;
+   background-color: rgb(230, 222, 222);
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-top:20px;
+   border-radius: 10%;
+}
+.row td:hover{
+    background-color: indianred;
+}
+.link{
+    width: 100px;
+    height: 100px;
+    margin-top: 100px;
+    margin-right: 300px;
+}
+.consumer{
+    display: inline-block;
+}
+.green:hover {
+    background-color: lawngreen !important;
+}
+.blue:hover {
+    background-color: lightblue !important;
+}
+.orange:hover {
+    background-color: orange !important;
+}
+.pink:hover {
+    background-color: pink !important;
+}
+.black:hover {
+    background-color: black !important;
+}
+/*end*/
+li a{
+    text-decoration: none;
+    outline: none;
+    color: whitesmoke;
+}
+ul{
+    list-style-type: none;
+}
+.col p{
+    color: whitesmoke;
+    font-size: 10px;
+}
+p{
+    font-size: 10px;
+}
